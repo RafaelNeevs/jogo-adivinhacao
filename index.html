@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Atividade 25 b - PCS</title>
+		<meta chairset="UTF-8">
+		<script src="javascript.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+	</head>
+	<body>
+	<header>
+		<h1>Mystery Number </h1>
+		<img src="logo.png" class="logo">
+	</header>
+	<main>
+		<section class="regras">
+		<h3>Regras do jogo:</h3>
+		
+		<ul>
+			<li>O número pensado esta sempre entre 0 e 100.	</li>
+			<li>O máximo de pontos que pode ser obtido é 100.</li>
+			<li>Ao clicar novo jogo um novo número é pensado.</li>
+			<li>A cada tentativa errada você perde 1 ponto.</li>
+		</ul>
+	<h3>Boa sorte!</h3>
+		</section>
+		<section class="advinha">
+		<h3>Tente adivinhar o número pensado: </h3>
+		<div>
+		<br>
+		<div class="input-container">
+		<input type="number" autocomplete="off" id="campoNumero" name="campoNumero" placeholder="">
+		<label for="input" class="label">Digite aqui:</label>
+		<div class="underline"></div>
+		</div>
+		
+		<br>
+		<div class="b">
+		<button id="button" onclick="numeroDigitado()">Enviar</button>
+		<button id="button" onclick="novojogo()">Novo jogo</button><br><br>
+		</div>
+		</div>
+		<label id="labelResultado"></label>
+		
+		</section>
+		
+		
+
+	</body>
+</html>
